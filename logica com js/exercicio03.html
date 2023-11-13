@@ -52,15 +52,27 @@
 </head>
 <body>
     <div class="box-nav">
-        <h1>EXERCÍCIO #00</h1>
+        <h1>EXERCÍCIO #03</h1>
         <h2>Prof. Bruno Aredes</h2>
     </div>
     <div class="box">
-        <p>Questão....</p>
-        <input type="text" placeholder="Digite um valor">
+        <p> Leia as idades de duas crianças. Após, calcular e mostrar a soma das idades e a média.</p>
+        <input type="number" id="crianca1" placeholder="Digite a idade a criança 1">
         <br><br>
-        <button>Enviar</button>
+        <input type="number" id="crianca2" placeholder="Digite a idade da criança 2">
+        <br><br>
+        <button onclick="somamedia()">Enviar</button>
     </div>
-    
 </body>
+<script>
+    function somamedia()
+    {
+        var idade1 = parseInt(document.querySelector('#crianca1').value);
+        var idade2 = parseInt(document.querySelector('#crianca2').value);
+        var soma = idade1 + idade2;
+        var media = soma / 2;
+        console.log('soma: ' + soma);
+        console.log('media: ' + media);
+    }
+</script>
 </html>
