@@ -18,10 +18,10 @@
         .box{
             background: rgba(0, 0, 0, 0.6);
             position: absolute;
-            top: 50%;
+            top: 60%;
             left: 50%;
             transform: translate(-50%, -50%);
-            padding: 15px ;
+            padding: 10px ;
             border-radius: 15px;
             color:white;
         }
@@ -57,21 +57,21 @@
     </div>
     <div class="box">
         <p>Leia 2 números. Efetue as 4 operações matemáticas e mostre os resultados.</p>
-        <input type="number" class="num" placeholder="Digite um valor">
+        <input type="number" id="value1" class="num" placeholder="Digite um valor A">
         <br><br>
-        <input type="number" class="num" placeholder="Digite um valor">
+        <input type="number" id="value2" class="num" placeholder="Digite um valor B">
         <br><br>
         <input type="radio" id="adicao" nome="operation" value="adicao">
         <label for="adicao">Adição</label>
         <br><br>
         <input type="radio" id="subtracao" nome="operation" value="Subtração">
-        <label for="adicao">Subtração</label>
+        <label for="subtracao">Subtração</label>
         <br><br>
         <input type="radio" id="mutiplicacao" nome="operation" value="mutiplicação">
-        <label for="adicao">mutiplicação</label>
+        <label for="mutiplicacao">mutiplicação</label>
         <br><br>
-        <input type="radio" id="divisao" nome="operation" value="Divisão">
-        <label for="adicao">Divisão</label>
+        <input type="radio" id="divisao" nome="operation" value="divisão">
+        <label for="divisao">Divisão</label>
         <br><br>
         <button onclick="calculation()">Enviar</button>
     </div>
@@ -82,8 +82,8 @@
     {
         var a = document.querySelector('#value1').value;
         var b = document.querySelector('#value2').value;
-        var selectOperation = document.querySelector('input[name="operation"]'):checked').value
-        console.log(selectOperation)
+        var SelectOperation = document.querySelector('input[name="operation"]:checked').value;
+        console.log(SelectOperation);
     }
 </script>
 </html>
